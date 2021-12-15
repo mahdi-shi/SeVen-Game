@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+.container .inviteCard{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.container .inviteCard .card1{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    transform: skewY(0deg);
+    background :linear-gradient(to bottom right , rgb(59, 59, 59),rgb(107, 107, 107));
+    opacity: 1;
+    z-index: 10;
+    animation-name: moveOne;
+    animation-timing-function: ease-out;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    top: 154vh;
+    left: 0px;
+    animation-fill-mode: forwards;
+}
+.container .inviteCard .card1::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 92%;
+    top: 10;
+}
+.container .inviteCard .card1 p{
+    font-weight: bold;
+    width: 88%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    line-height: 28px;
+    user-select: none;
+}
+@keyframes moveOne{
+    0%{top: 152vh;opacity: 1;transform: skewY(0deg);}
+    40%{top: 71vh;opacity: 1;transform: skewY(0deg);}
+    97%{top: 71vh;opacity: 1;transform: skewY(0deg);}
+    100%{top: 71vh;opacity: 0;transform: skewY(20deg);}
+}
+.container .inviteCard .card2{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    transform: skewY(0deg);
+    background :linear-gradient(to bottom right , rgb(59, 59, 59),rgb(107, 107, 107));
+    opacity: 1;
+    z-index: 10;
+    animation-name: moveTwo;
+    animation-timing-function: ease-out;
+    animation-duration: 15s;
+    animation-delay: 15s;
+    top: 120vh;
+    animation-fill-mode: forwards;
+}
+.container .inviteCard .card2::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 92%;
+    top: 10;
+}
+.container .inviteCard .card2 p{
+    font-weight: bold;
+    width: 88%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    line-height: 28px;
+    user-select: none;
+}
+@keyframes moveTwo{
+    0%{top: 128vh;opacity: 1;transform: skewY(0deg);}
+    40%{top: 42vh;opacity: 1;transform: skewY(0deg);}
+    97%{top: 42vh;opacity: 1;transform: skewY(0deg);}
+    100%{top: 42vh;opacity: 0;transform: skewY(20deg);}
+}
+.container .inviteCard .card3{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    transform: skewY(0deg);
+    background :linear-gradient(to bottom right , rgb(59, 59, 59),rgb(107, 107, 107));
+    opacity: 1;
+    z-index: 10;
+    animation-name: moveThree;
+    animation-timing-function: ease-out;
+    animation-duration: 10s;
+    animation-delay: 30s;
+    top: 90vh;
+    animation-fill-mode: forwards;
+}
+.container .inviteCard .card3::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 92%;
+    top: 10;
+}
+.container .inviteCard .card3 p{
+    font-weight: bold;
+    width: 88%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    line-height: 28px;
+    user-select: none;
+}
+@keyframes moveThree{
+    0%{top: 88vh;opacity: 1;transform: skewY(0deg);}
+    40%{top: 10vh;opacity: 1;transform: skewY(0deg);}
+    97%{top: 10vh;opacity: 1;transform: skewY(0deg);}
+    100%{top: 10vh;opacity: 0;transform: skewY(20deg);}
+}
+.container .inviteCard .card4{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    transform: skewY(0deg);
+    background :linear-gradient(to bottom right , rgb(59, 59, 59),rgb(107, 107, 107));
+    opacity: 1;
+    z-index: 10;
+    animation-name: moveFour;
+    animation-delay: 40s;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    top: 99vh;
+    transition: 0.3s;
+}
+.container .inviteCard .card4::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 92%;
+    top: 10;
+}
+.container .inviteCard .card4 p{
+    font-weight: bold;
+    width: 88%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    line-height: 28px;
+    user-select: none;
+}
+.container .inviteCard .card4 #Yes{
+    position: absolute;
+    top: 80%;
+    left: 87%;
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.container .inviteCard .card4 #yes:hover{
+    color: rgb(192, 192, 192);
+}
+.container .inviteCard .card4 #No{
+    position: absolute;
+    top: 80%;
+    left: 75%;
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.container .inviteCard .card4 #No:hover{
+    color: rgb(192, 192, 192);
+}
+@keyframes moveFour{
+    0%{top: 99vh;}
+    100%{top:-16vh;}
+}
+.container .inviteCard .card5{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    transform: skewY(0deg);
+    background :linear-gradient(to bottom right , rgb(59, 59, 59),rgb(107, 107, 107));
+    opacity: 1;
+    z-index: 10;
+    top: 69vh;
+}
+.container .inviteCard .card5::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 92%;
+    top: 10;
+}
+.container .inviteCard .card5 p{
+    font-weight: bold;
+    width: 88%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    line-height: 28px;
+    user-select: none;
+}
+.moveCardFive{
+    animation-name: moveFive;
+    animation-delay: 3s;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes moveFive{
+    0%{top: 69vh;}
+    100%{top: -70vh;}
+}
+.container .inviteCard .lastCard{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    transform: skewY(0deg);
+    background :linear-gradient(to bottom right , rgb(59, 59, 59),rgb(107, 107, 107));
+    opacity: 1;
+    z-index: 10;
+    transform-style: preserve-3d;
+    top: 69vh;   
+    transition: 4s;
+    opacity: 1;
+}
+.container .inviteCard .lastCard h2{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 10%;
+    transition: 1s;
+}
+.container .inviteCard .lastCard p{
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 40%;
+    transition: 1s;
+}
+.moveLastCard{
+    animation-name: moveLast;
+    animation-delay: 3s;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes moveLast{
+    0%{top: 69vh;}
+    100%{top: -90vh;}
+}
+.container .inviteCard .lastCard img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 16%;
+    top: 43%;
+    display: none;
+    transform: rotateX(180deg);
+}
+.container .inviteCard .lastCard h3{
+    position: absolute;
+    left:40%;
+    font-size: 30px;
+    top: 50%;
+    transition: 1s;
+    transform: rotateX(180deg);
+}
+.container .inviteCard .lastCard h3 span{
+    color: rgb(226, 43, 134);
+}
+.container .inviteCard .lastCard #title{
+    display: none;
+}
